@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+</head>
+<body>
+Created by: {{author}}
+<br />
+Date : {{date}}
+<br />
+Title : {{title}} 
+<br />
+Last Edited by: {{editName}}
+<br />
+Last Edited Time: {{editDate}}
+<br />
+<img src="{{image}}" >
+<br />
+<form method="POST" action="/select/{{id}}?_method=PUT">
+
+<br />
+<label>
+Enter Editor Name:<input type="text" name="editName" />
+<br />
+</label>
+    <textarea name="content" rows="20" cols="30">
+{{content}}
+</textarea>
+    <button type="submit">Edit</button>
+</form>
+
+<br />
+<a href="/">Home</a>
+</body>
+</html>

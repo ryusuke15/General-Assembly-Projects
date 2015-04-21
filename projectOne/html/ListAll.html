@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List All Blogs</title>
+</head>
+<body>
+<p> Check out our blogs!</p>
+<ul>
+    {{#allBlogs}}
+      <li><a href="/select/{{id}}">{{id}} - {{author}} - {{title}} - {{category}} - {{date}}</a></li>
+    {{/allBlogs}}
+</ul>
+
+<br />
+  <a href="/">Home</a>
+<br />
+<img src='/searchAllpage.jpg' >
+</body>
+</html>

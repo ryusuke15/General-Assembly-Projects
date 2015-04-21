@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+</head>
+<body>
+<p>Search Result</p>
+<ul>
+    {{#searchResult}}
+       <li><a href="/search/result/{{id}}">{{title}}{{author}}{{date}}{{category}}</a></li>
+    {{/searchResult}}
+  </ul>
+<br />
+<br />
+  <a href="/">Home</a>
+<br />
+<img src='/resultpage.jpg'>
+</body>
+</html>
